@@ -1,4 +1,4 @@
-class Foo < Formula
+class LangdaoDict < Formula
   desc "Lang Dao Dictionary For Mac Dictionary App"
   homepage "https://github.com/ahuigo/homebrew-ahui"
   url "https://github.com/ahuigo/homebrew-ahui/releases/download/v1.0/langdao-5.0.tgz"
