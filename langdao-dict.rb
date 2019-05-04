@@ -8,11 +8,14 @@ class LangdaoDict < Formula
 
   def install
     # ENV.deparallelize
-    system "echo","mv","*",
-        "~/Library/Dictionaries/"
+    printf `echo This Formula do not work!`
+    printf `echo Pls use LangdaoDict.sh instead`
+    #cmd = "mv * #{Dir.home}/Library/Dictionaries/"
+    #printf `echo  #{cmd}`
+    #`#{cmd}`
   end
 
   test do
-    system "false"
+    system "true"
   end
 end
