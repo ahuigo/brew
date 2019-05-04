@@ -8,8 +8,11 @@ class LangdaoDict < Formula
 
   def install
     # ENV.deparallelize
+    printf `whoami`
+    cmd = "echo mv * #{ENV['HOME']}/Library/Dictionaries/"
+    printf `echo #{cmd}`
     printf `echo This Formula do not work!`
-    printf `echo Pls use LangdaoDict.sh instead`
+    printf `echo Pls use LangdaoDict.sh instead!`
     #cmd = "mv * #{Dir.home}/Library/Dictionaries/"
     #printf `echo  #{cmd}`
     #`#{cmd}`
