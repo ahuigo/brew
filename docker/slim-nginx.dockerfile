@@ -93,15 +93,18 @@ RUN set -x \
 	fi
 
 RUN apt-get update && apt-get install -y procps \
-    &&  apt-get install vim curl -y \
+    &&  apt-get install vim curl -y 
 
 # forward request and error logs to docker log collector
 #RUN ln -sf /dev/stdout /var/log/nginx/access.log # && ln -sf /dev/stderr /var/log/nginx/error.log
+
+
+ARG nginx_conf_dir=/etc/nginx/conf.d/
+COPY ./gateway.conf $nginx_conf_dir/default.conf
 
 EXPOSE 80
 
 STOPSIGNAL SIGTERM
 
-# CMD ["nginx", "-g", "daemon off;"]
-CMD ["nginx", "-g", "daemon on;"]
+CMD ["nginx", "-g", "daemon off;"]
 
