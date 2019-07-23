@@ -1,4 +1,4 @@
-class Go < Formula
+class Go12 < Formula
   desc "Open source programming language to build simple/reliable/efficient software"
   homepage "https://golang.org"
 
