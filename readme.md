@@ -1,3 +1,6 @@
+# Install arun
+	brew install ahuigo/ahui/arun
+
 # Install dict
 Work:
 
